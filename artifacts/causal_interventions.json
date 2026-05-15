@@ -1,0 +1,62 @@
+{
+  "stage": "causal_intervention",
+  "base_chain_risk": 0.99804496384,
+  "top_interventions": [
+    {
+      "blocked_node": "Reconnaissance",
+      "base_risk": 0.99804496384,
+      "post_intervention_risk": 0.294,
+      "risk_reduction": 0.7040449638399999
+    },
+    {
+      "blocked_node": "Initial Access",
+      "base_risk": 0.99804496384,
+      "post_intervention_risk": 0.294,
+      "risk_reduction": 0.7040449638399999
+    },
+    {
+      "blocked_node": "Credential Access",
+      "base_risk": 0.99804496384,
+      "post_intervention_risk": 0.5173000000000001,
+      "risk_reduction": 0.4807449638399999
+    }
+  ],
+  "all_interventions": [
+    {
+      "blocked_node": "Reconnaissance",
+      "base_risk": 0.99804496384,
+      "post_intervention_risk": 0.294,
+      "risk_reduction": 0.7040449638399999
+    },
+    {
+      "blocked_node": "Initial Access",
+      "base_risk": 0.99804496384,
+      "post_intervention_risk": 0.294,
+      "risk_reduction": 0.7040449638399999
+    },
+    {
+      "blocked_node": "Credential Access",
+      "base_risk": 0.99804496384,
+      "post_intervention_risk": 0.5173000000000001,
+      "risk_reduction": 0.4807449638399999
+    },
+    {
+      "blocked_node": "Privilege Escalation",
+      "base_risk": 0.99804496384,
+      "post_intervention_risk": 0.630574,
+      "risk_reduction": 0.36747096384
+    },
+    {
+      "blocked_node": "Lateral Movement",
+      "base_risk": 0.99804496384,
+      "post_intervention_risk": 0.6777836799999999,
+      "risk_reduction": 0.3202612838400001
+    },
+    {
+      "blocked_node": "Exfiltration",
+      "base_risk": 0.99804496384,
+      "post_intervention_risk": 0.6937794304,
+      "risk_reduction": 0.30426553343999996
+    }
+  ]
+}

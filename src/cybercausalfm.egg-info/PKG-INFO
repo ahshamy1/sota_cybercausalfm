@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: cybercausalfm
+Version: 0.1.0
+Summary: CyberCausalFM
+Requires-Python: >=3.10

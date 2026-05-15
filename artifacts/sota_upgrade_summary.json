@@ -1,0 +1,86 @@
+{
+  "scaling": {
+    "stage": "scaling_laws",
+    "num_points": 3,
+    "best_zero_day_proxy_acc": 0.2109375,
+    "best_config": {
+      "event_dim": 64,
+      "n_layers": 1,
+      "n_heads": 2,
+      "params": 107400
+    },
+    "csv": "C:\\P26\\sota_cybercausalfm\\artifacts\\scaling_law_results.csv"
+  },
+  "calibration": {
+    "stage": "calibration",
+    "temperature": 2.9738171100616455,
+    "ece_before": 0.0394058347446844,
+    "ece_after": 0.03046780824661255,
+    "nll_before": 1.7974029779434204,
+    "nll_after": 1.7932952642440796,
+    "json": "C:\\P26\\sota_cybercausalfm\\artifacts\\calibration_report.json"
+  },
+  "causal": {
+    "stage": "causal_intervention",
+    "base_chain_risk": 0.99804496384,
+    "top_interventions": [
+      {
+        "blocked_node": "Reconnaissance",
+        "base_risk": 0.99804496384,
+        "post_intervention_risk": 0.294,
+        "risk_reduction": 0.7040449638399999
+      },
+      {
+        "blocked_node": "Initial Access",
+        "base_risk": 0.99804496384,
+        "post_intervention_risk": 0.294,
+        "risk_reduction": 0.7040449638399999
+      },
+      {
+        "blocked_node": "Credential Access",
+        "base_risk": 0.99804496384,
+        "post_intervention_risk": 0.5173000000000001,
+        "risk_reduction": 0.4807449638399999
+      }
+    ],
+    "all_interventions": [
+      {
+        "blocked_node": "Reconnaissance",
+        "base_risk": 0.99804496384,
+        "post_intervention_risk": 0.294,
+        "risk_reduction": 0.7040449638399999
+      },
+      {
+        "blocked_node": "Initial Access",
+        "base_risk": 0.99804496384,
+        "post_intervention_risk": 0.294,
+        "risk_reduction": 0.7040449638399999
+      },
+      {
+        "blocked_node": "Credential Access",
+        "base_risk": 0.99804496384,
+        "post_intervention_risk": 0.5173000000000001,
+        "risk_reduction": 0.4807449638399999
+      },
+      {
+        "blocked_node": "Privilege Escalation",
+        "base_risk": 0.99804496384,
+        "post_intervention_risk": 0.630574,
+        "risk_reduction": 0.36747096384
+      },
+      {
+        "blocked_node": "Lateral Movement",
+        "base_risk": 0.99804496384,
+        "post_intervention_risk": 0.6777836799999999,
+        "risk_reduction": 0.3202612838400001
+      },
+      {
+        "blocked_node": "Exfiltration",
+        "base_risk": 0.99804496384,
+        "post_intervention_risk": 0.6937794304,
+        "risk_reduction": 0.30426553343999996
+      }
+    ],
+    "json": "C:\\P26\\sota_cybercausalfm\\artifacts\\causal_interventions.json"
+  }
+}
