@@ -1,5 +1,7 @@
 # CyberCausalFM (SOTA Scaffold)
 
+![CI](https://github.com/ahshamy1/sota_cybercausalfm/actions/workflows/ci.yml/badge.svg)
+
 This project is a runnable scaffold generated from the concepts and snippets extracted from `CS.pdf`, then upgraded into a practical SOTA-style architecture:
 
 - Cyber foundation pretraining objectives:
@@ -53,25 +55,3 @@ To make it fully publishable, add:
 2. Real graph causal discovery and intervention tests
 3. Calibration error evaluation and post-hoc calibration
 4. Distributed/federated training and full MLOps deployment
-name: CI
-
-on:
-  push:
-  pull_request:
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.13"
-      - name: Install deps
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install -e .
-          pip install pytest
-      - name: Run tests
-        run: python -m pytest -q
